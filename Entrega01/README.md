@@ -47,7 +47,12 @@ Sin embargo, existe una falta de estudios que combinen múltiples fuentes de dat
 
 ## Historia Visual:
 * ¿Cuál es la historia de su proyecto de investigación? ¿Qué es lo nuevo?
+  La historia mostrará cómo una canción pasa de ser desconocida a convertirse en un hit.
+  Definición basada en datos de “hit musical”, Enfoque en Latinoamérica, Cruce de múltiples plataformas (no solo una)
 + ¿Qué tipo de elementos digitales les gustaría tener? ¿Cómo esos elementos ayudarán a contar su historia? Adjunten ejemplos y referencias
+- Gráficos interactivos (crecimiento de streams), Comparaciones entre canciones virales vs no virales, Timeline de éxito de canciones, Mapas de popularidad, Referencias
+- Proyecto de The Pudding sobre TikTok y Video de Vox
 
 ## Resultados:
 + ¿Qué es lo mínimo que se puede contar como historia con los datos que tienen? ¿Qué es lo máximo?
+  Identificar patrones básicos en canciones exitosas y mostrar relación entre streams y viralidad. Lo máximo, Modelo predictivo de éxito musical, clasificación de tipos de hits (viral, orgánico, impulsado por industria) y visualización interactiva completa tipo storytelling
