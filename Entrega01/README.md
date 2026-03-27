@@ -24,38 +24,31 @@ En el contexto latinoamericano, medios como Rolling Stone Latinoamérica y Billb
 
 Existe, por tanto, un vacío en el cruce sistemático de datos entre plataformas, que este proyecto busca abordar.
 ## Datos:
-¿Qué datos necesita para probar su hipótesis?
-Rankings de canciones (Spotify Top 50 Chile / Global)
-Número de reproducciones (streams)
-Presencia en playlists editoriales (Spotify)
-Número de videos en TikTok que utilizan el audio
-Visualizaciones en YouTube
-Fecha de lanzamiento
-Género musical
-Número de colaboradores
-¿Qué datos tiene y qué datos necesita conseguir aún?
 
-Tenemos acceso a:
+* Rankings de canciones (Spotify Top 50 Chile / Global)
+* Número de reproducciones (streams)
+* Presencia en playlists editoriales (Spotify)
+* Número de videos en TikTok que utilizan el audio
+* Visualizaciones en YouTube
+* Fecha de lanzamiento
+* Género musical
+* Número de colaboradores
+  
+# Tenemos acceso a:
 
-Spotify Charts (https://charts.spotify.com/
-)
-YouTube (visualizaciones públicas)
-Rankings históricos disponibles online
+* Spotify Charts (https://charts.spotify.com/)
+* YouTube (visualizaciones públicas)
+* Rankings históricos disponibles online
 
 Necesitamos conseguir:
 
-Datos sistematizados de TikTok (no disponibles como base abierta)
-Presencia en playlists específicas (requiere registro manual o uso de APIs externas como Spotify Web API)
-Datos más detallados sobre colaboraciones (levantamiento manual)
-¿Qué datos no existen y cómo los obtendrán?
-Impacto exacto de TikTok: no existe una base pública estructurada
+* Datos sistematizados de TikTok (no disponibles como base abierta)
+* Presencia en playlists específicas (requiere registro manual o uso de APIs externas como Spotify Web API)
+* Datos más detallados sobre colaboraciones (levantamiento manual)
+* ¿Qué datos no existen y cómo los obtendrán?
+* Impacto exacto de TikTok: no existe una base pública estructurada
 → Lo estimaremos mediante el número de videos que utilizan un audio
 Estrategias de marketing: no son públicas
-→ Las inferiremos indirectamente a través de:
-timing de lanzamientos
-frecuencia de colaboraciones
-دخول en playlists relevantes
-¿Qué datos son públicos y cuáles no?
 
 Públicos:
 
@@ -73,14 +66,20 @@ Privados:
 Datos de sellos discográficos
 Estrategias de marketing
 Inversión promocional
+
 ¿Qué datos son confiables y cuáles no?
-Alta confiabilidad: Spotify, YouTube, IFPI
-Media confiabilidad: TikTok (por recolección manual y variabilidad)
-Baja confiabilidad: estimaciones indirectas (marketing, impacto cultural)
+* Alta confiabilidad: Spotify, YouTube, IFPI
+* Media confiabilidad: TikTok (por recolección manual y variabilidad)
+* Baja confiabilidad: estimaciones indirectas (marketing, impacto cultural)
 
 ## Preguntas a responder:
-* ¿Cuáles son las preguntas que se pueden responder con los datos?
-
+* ¿Qué características tienen las canciones que alcanzan el Top 10?
+* ¿Qué rol juega TikTok en la viralidad musical?
+* ¿Las colaboraciones aumentan la probabilidad de éxito?
+* ¿Existe un patrón en la duración o estructura de los hits?
+* ¿Cuánto influye la inclusión en playlists?
+* ¿Qué diferencias existen entre hits locales (Chile) y globales?
+* ¿Qué factores permiten que una canción “cruce fronteras”?
 ## Historia Visual:
 * ¿Cuál es la historia de su proyecto de investigación? ¿Qué es lo nuevo?
 + ¿Qué tipo de elementos digitales les gustaría tener? ¿Cómo esos elementos ayudarán a contar su historia? Adjunten ejemplos y referencias
