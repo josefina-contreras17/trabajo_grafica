@@ -9,8 +9,7 @@
 
 * Históricamente, el estudio de los hits se limitaba al análisis de la radio y las ventas físicas. Sin embargo, la literatura reciente (2018-2024) señala un cambio de paradigma: la desterritorialización del éxito. Los antecedentes muestran que el factor determinante ya no es el origen geográfico, sino la capacidad de una obra para ser fragmentada y reinterpretada en el ecosistema digital (TikTok/Reels), lo que ha dado lugar a una nueva 'gramática del hit' que prioriza la sonoridad sobre el significado".
 ## Pregunta de Investigación:
-"¿En qué medida la estandarización de parámetros acústicos (ritmo y estructura) determina la transición de una canción desde un éxito de nicho regional hacia la viralidad en los charts globales?"
-
+¿En qué medida la estandarización de parámetros acústicos (ritmo y estructura) determina la transición de una canción desde un éxito de nicho regional hacia la viralidad en los charts globales?
 ## Antecedentes del tema:
 ### Qué se ha publicado antes
 * __Informes de Industria__ (IFPI, Spotify, Luminate): Publican anualmente el Global Music Report. Se centran en el volumen de ingresos y el crecimiento de los "mercados emergentes". Su enfoque es transaccional.
