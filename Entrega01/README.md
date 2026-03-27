@@ -1,9 +1,7 @@
-# Trabajo de Narración Gráfica de No Ficción
-*Josefina Contreras, Geraldine González y Asunsión Luna*
+## Trabajo de Narración Gráfica de No Ficción
+> *Josefina Contreras, Geraldine González y Asunsión Luna*
 
-```
-Anatomía de un Hit: Chile vs. el mundo
-```
+# Anatomía de un Hit: Chile vs. el mundo
 
 ## Síntesis del proyecto:
 * Este proyecto analiza la metamorfosis de los fenómenos musicales contemporáneos, contrastando las estructuras de éxito en mercados de nicho (Regional) frente a los de consumo masivo (Global). 
@@ -11,7 +9,7 @@ Anatomía de un Hit: Chile vs. el mundo
 
 * Históricamente, el estudio de los hits se limitaba al análisis de la radio y las ventas físicas. Sin embargo, la literatura reciente (2018-2024) señala un cambio de paradigma: la desterritorialización del éxito. Los antecedentes muestran que el factor determinante ya no es el origen geográfico, sino la capacidad de una obra para ser fragmentada y reinterpretada en el ecosistema digital (TikTok/Reels), lo que ha dado lugar a una nueva 'gramática del hit' que prioriza la sonoridad sobre el significado".
 ## Pregunta de Investigación:
-
+"¿En qué medida la estandarización de parámetros acústicos (ritmo y estructura) determina la transición de una canción desde un éxito de nicho regional hacia la viralidad en los charts globales?"
 
 ## Antecedentes del tema:
 ### Qué se ha publicado antes
@@ -26,14 +24,15 @@ Anatomía de un Hit: Chile vs. el mundo
 * __La "TikTokización" de la Música__: El hecho de que el éxito global ahora dependa de un fragmento de 15 segundos (el hook o gancho) ha forzado a los ritmos regionales a ser más "meméticos".
 * __El fenómeno del K-Pop__ (BTS/Blackpink): Es el antecedente perfecto de diseño de laboratorio. Demostraron que puedes tomar un ritmo global (Hip-hop/EDM), añadirle estética local y venderlo como un producto premium universal
 
-IFPI – Global Music Report (2023–2024): señala que el streaming representa más del 65% de los ingresos globales de la música, consolidando a plataformas como Spotify como gatekeepers del éxito.
-MIDiA Research (2023): identifica a TikTok como el principal motor de descubrimiento musical entre audiencias jóvenes.
-The Pudding (2020–2023): ha desarrollado proyectos que muestran cómo TikTok transforma canciones en fenómenos virales a través de fragmentos reutilizables.
-Billboard y Chartmetric: destacan el rol de playlists editoriales (como Today’s Top Hits) en la amplificación de canciones.
+ * IFPI – Global Music Report (2023–2024): señala que el streaming representa más del 65% de los ingresos globales de la música, consolidando a plataformas como Spotify como gatekeepers del éxito.
+* MIDiA Research (2023): identifica a TikTok como el principal motor de descubrimiento musical entre audiencias jóvenes.
+* The Pudding (2020–2023): ha desarrollado proyectos que muestran cómo TikTok transforma canciones en fenómenos virales a través de fragmentos reutilizables.
+* Billboard y Chartmetric: destacan el rol de playlists editoriales (como Today’s Top Hits) en la amplificación de canciones.
 
-En el contexto latinoamericano, medios como Rolling Stone Latinoamérica y Billboard Latin han documentado el auge del género urbano, pero con un enfoque principalmente narrativo, sin integrar múltiples fuentes de datos.
+* En el contexto latinoamericano, medios como Rolling Stone Latinoamérica y Billboard Latin han documentado el auge del género urbano, pero con un enfoque principalmente narrativo, sin integrar múltiples fuentes de datos.
 
 Existe, por tanto, un vacío en el cruce sistemático de datos entre plataformas, que este proyecto busca abordar.
+
 ## Datos:
 * ¿Qué datos necesita para probar su hipótesis?
     * _Se necesitan Métricas de Consumo Geográfico_: Porcentaje de oyentes fuera del país de origen. 
@@ -75,13 +74,12 @@ Existe, por tanto, un vacío en el cruce sistemático de datos entre plataformas
 * Rankings históricos disponibles online
 
 ## Necesitamos conseguir:
-
 * Datos sistematizados de TikTok (no disponibles como base abierta)
 * Presencia en playlists específicas (requiere registro manual o uso de APIs externas como Spotify Web API)
 * Datos más detallados sobre colaboraciones (levantamiento manual)
 * ¿Qué datos no existen y cómo los obtendrán?
 * Impacto exacto de TikTok: no existe una base pública estructurada
-→ Lo estimaremos mediante el número de videos que utilizan un audio
+    * Lo estimaremos mediante el número de videos que utilizan un audio
 Estrategias de marketing: no son públicas
 
 ## Públicos:
