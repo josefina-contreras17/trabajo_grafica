@@ -85,4 +85,13 @@ Inversión promocional
 + ¿Qué tipo de elementos digitales les gustaría tener? ¿Cómo esos elementos ayudarán a contar su historia? Adjunten ejemplos y referencias
 
 ## Resultados:
-+ ¿Qué es lo mínimo que se puede contar como historia con los datos que tienen? ¿Qué es lo máximo?
+Minimos: 
+* Identificar patrones básicos en canciones exitosas
+* Mostrar relación entre streams, TikTok y rankings
+* Evidenciar diferencias entre hits locales y globales
+
+Máximos: 
+* Construir un modelo explicativo del éxito musical
+* Clasificar tipos de hits: Viral (TikTok-driven), orgánico o impulsado por industria
+* Desarrollar una webstory interactiva completa que permita al usuario explorar datos
+* Detectar una posible “fórmula” del hit contemporáneo
