@@ -24,11 +24,14 @@ En el contexto latinoamericano, medios como Rolling Stone Latinoamérica y Billb
 
 Existe, por tanto, un vacío en el cruce sistemático de datos entre plataformas, que este proyecto busca abordar.
 ## Datos:
-* ¿Qué datos necesita para probar su hipótesis?
-* ¿Qué datos tiene y qué datos necesita conseguir aún?
-* ¿Qué datos no existen y cómo los obtendrá?
-* ¿Qué datos son públicos y cuáles no?
-* ¿Qué datos son confiables y cuáles no?
+Rankings de canciones (Spotify Top 50 Chile / Global)
+Número de reproducciones (streams)
+Presencia en playlists editoriales (Spotify)
+Número de videos en TikTok que utilizan el audio
+Visualizaciones en YouTube
+Fecha de lanzamiento
+Género musical
+Número de colaboradores
 
 ## Preguntas a responder:
 * ¿Cuáles son las preguntas que se pueden responder con los datos?
