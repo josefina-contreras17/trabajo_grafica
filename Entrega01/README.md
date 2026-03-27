@@ -11,7 +11,7 @@ Anatomía de un Hit: Chile vs. el mundo
 
 * Históricamente, el estudio de los hits se limitaba al análisis de la radio y las ventas físicas. Sin embargo, la literatura reciente (2018-2024) señala un cambio de paradigma: la desterritorialización del éxito. Los antecedentes muestran que el factor determinante ya no es el origen geográfico, sino la capacidad de una obra para ser fragmentada y reinterpretada en el ecosistema digital (TikTok/Reels), lo que ha dado lugar a una nueva 'gramática del hit' que prioriza la sonoridad sobre el significado".
 ## Pregunta de Investigación:
-
+¿Qué patrones medibles explican que una canción pase de ser un éxito local en Chile o Latinoamérica a convertirse en un hit global?
 ## Antecedentes del tema:
 
 ## Datos:
