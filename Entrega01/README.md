@@ -113,8 +113,17 @@ Inversión promocional
 * ¿Qué diferencias existen entre hits locales (Chile) y globales?
 * ¿Qué factores permiten que una canción “cruce fronteras”?
 ## Historia Visual:
-* ¿Cuál es la historia de su proyecto de investigación? ¿Qué es lo nuevo?
-+ ¿Qué tipo de elementos digitales les gustaría tener? ¿Cómo esos elementos ayudarán a contar su historia? Adjunten ejemplos y referencias
+La historia nace de observar una paradoja en el mercado actual: **¿Por qué una canción producida en un dormitorio en Chile o Puerto Rico termina siendo el #1 en una discoteca de Berlín o Seúl?**
+
+A diferencia de otros análisis que solo miran las listas de ventas (Billboard), lo nuevo de esta investigación es:
+1. El Enfoque en la "Arquitectura del Hit": No analizamos el éxito como un accidente, sino como una construcción de parámetros acústicos (BPM, danceability) y arquetipos universales.
+2. La Visibilización del "Caballo de Troya": Cómo las colaboraciones internacionales no son solo arte, sino una ingeniería de mercado para "inyectar" sonidos regionales en playlists globales.
+
+| Elemento      | Función |
+| ------------- |:-------------:|
+| Mapas de Calor Animados    | Mostrar cómo una canción "nace" en un punto y se expande globalmente en 24h. Visibiliza la velocidad de la era digital frente a la radio tradicional.    |
+| Gráficos de "Radar" de Spotify     | Visualizar la Danceability, Energy y Valence de un hit regional vs uno global. Prueba científicamente por qué ciertos ritmos son "universales".     |
+| Scroll-Triggered Animations      | A medida que el usuario baja, los elementos de la canción se van sumando (voz + beat + slang).Crea una experiencia de "ensamblaje" del éxito.   |
 
 ## Resultados:
 Minimos: 
