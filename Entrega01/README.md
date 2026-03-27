@@ -13,7 +13,16 @@ Anatomía de un Hit: Chile vs. el mundo
 ## Pregunta de Investigación:
 ¿Qué patrones medibles explican que una canción pase de ser un éxito local en Chile o Latinoamérica a convertirse en un hit global?
 ## Antecedentes del tema:
+Diversos estudios han analizado el impacto de las plataformas digitales en la industria musical:
 
+IFPI – Global Music Report (2023–2024): señala que el streaming representa más del 65% de los ingresos globales de la música, consolidando a plataformas como Spotify como gatekeepers del éxito.
+MIDiA Research (2023): identifica a TikTok como el principal motor de descubrimiento musical entre audiencias jóvenes.
+The Pudding (2020–2023): ha desarrollado proyectos que muestran cómo TikTok transforma canciones en fenómenos virales a través de fragmentos reutilizables.
+Billboard y Chartmetric: destacan el rol de playlists editoriales (como Today’s Top Hits) en la amplificación de canciones.
+
+En el contexto latinoamericano, medios como Rolling Stone Latinoamérica y Billboard Latin han documentado el auge del género urbano, pero con un enfoque principalmente narrativo, sin integrar múltiples fuentes de datos.
+
+Existe, por tanto, un vacío en el cruce sistemático de datos entre plataformas, que este proyecto busca abordar.
 ## Datos:
 * ¿Qué datos necesita para probar su hipótesis?
 * ¿Qué datos tiene y qué datos necesita conseguir aún?
