@@ -34,13 +34,13 @@ Existe, por tanto, un vacío en el cruce sistemático de datos entre plataformas
 * Género musical
 * Número de colaboradores
   
-# Tenemos acceso a:
+## Tenemos acceso a:
 
 * Spotify Charts (https://charts.spotify.com/)
 * YouTube (visualizaciones públicas)
 * Rankings históricos disponibles online
 
-Necesitamos conseguir:
+## Necesitamos conseguir:
 
 * Datos sistematizados de TikTok (no disponibles como base abierta)
 * Presencia en playlists específicas (requiere registro manual o uso de APIs externas como Spotify Web API)
@@ -50,24 +50,24 @@ Necesitamos conseguir:
 → Lo estimaremos mediante el número de videos que utilizan un audio
 Estrategias de marketing: no son públicas
 
-Públicos:
+## Públicos:
 
 Spotify Charts
 YouTube views
 Rankings globales (Billboard, Spotify)
 
-Semi-públicos:
+## Semi-públicos:
 
 TikTok (requiere recolección manual)
 Spotify API (requiere acceso técnico)
 
-Privados:
+## Privados:
 
 Datos de sellos discográficos
 Estrategias de marketing
 Inversión promocional
 
-¿Qué datos son confiables y cuáles no?
+## ¿Qué datos son confiables y cuáles no?
 * Alta confiabilidad: Spotify, YouTube, IFPI
 * Media confiabilidad: TikTok (por recolección manual y variabilidad)
 * Baja confiabilidad: estimaciones indirectas (marketing, impacto cultural)
