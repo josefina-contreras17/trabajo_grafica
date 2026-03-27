@@ -24,7 +24,7 @@ En el contexto latinoamericano, medios como Rolling Stone Latinoamérica y Billb
 
 Existe, por tanto, un vacío en el cruce sistemático de datos entre plataformas, que este proyecto busca abordar.
 ## Datos:
-Rankings de canciones (Spotify Top 50 Chile / Global)
+* Rankings de canciones (Spotify Top 50 Chile / Global)
 Número de reproducciones (streams)
 Presencia en playlists editoriales (Spotify)
 Número de videos en TikTok que utilizan el audio
