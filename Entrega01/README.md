@@ -26,6 +26,14 @@ Anatomía de un Hit: Chile vs. el mundo
 * __La "TikTokización" de la Música__: El hecho de que el éxito global ahora dependa de un fragmento de 15 segundos (el hook o gancho) ha forzado a los ritmos regionales a ser más "meméticos".
 * __El fenómeno del K-Pop__ (BTS/Blackpink): Es el antecedente perfecto de diseño de laboratorio. Demostraron que puedes tomar un ritmo global (Hip-hop/EDM), añadirle estética local y venderlo como un producto premium universal
 
+IFPI – Global Music Report (2023–2024): señala que el streaming representa más del 65% de los ingresos globales de la música, consolidando a plataformas como Spotify como gatekeepers del éxito.
+MIDiA Research (2023): identifica a TikTok como el principal motor de descubrimiento musical entre audiencias jóvenes.
+The Pudding (2020–2023): ha desarrollado proyectos que muestran cómo TikTok transforma canciones en fenómenos virales a través de fragmentos reutilizables.
+Billboard y Chartmetric: destacan el rol de playlists editoriales (como Today’s Top Hits) en la amplificación de canciones.
+
+En el contexto latinoamericano, medios como Rolling Stone Latinoamérica y Billboard Latin han documentado el auge del género urbano, pero con un enfoque principalmente narrativo, sin integrar múltiples fuentes de datos.
+
+Existe, por tanto, un vacío en el cruce sistemático de datos entre plataformas, que este proyecto busca abordar.
 ## Datos:
 * ¿Qué datos necesita para probar su hipótesis?
     * _Se necesitan Métricas de Consumo Geográfico_: Porcentaje de oyentes fuera del país de origen. 
@@ -51,10 +59,61 @@ Anatomía de un Hit: Chile vs. el mundo
         * Retention Curves: En qué segundo exacto la gente deja de escuchar la canción.
 
 * ¿Qué datos son confiables y cuáles no?
+    * Rankings de canciones (Spotify Top 50 Chile / Global)
+    * Número de reproducciones (streams)
+    * Presencia en playlists editoriales (Spotify)
+    * Número de videos en TikTok que utilizan el audio
+    * Visualizaciones en YouTube
+    * Fecha de lanzamiento
+    * Género musical
+    * Número de colaboradores
+  
+## Tenemos acceso a:
+
+* Spotify Charts (https://charts.spotify.com/)
+* YouTube (visualizaciones públicas)
+* Rankings históricos disponibles online
+
+## Necesitamos conseguir:
+
+* Datos sistematizados de TikTok (no disponibles como base abierta)
+* Presencia en playlists específicas (requiere registro manual o uso de APIs externas como Spotify Web API)
+* Datos más detallados sobre colaboraciones (levantamiento manual)
+* ¿Qué datos no existen y cómo los obtendrán?
+* Impacto exacto de TikTok: no existe una base pública estructurada
+→ Lo estimaremos mediante el número de videos que utilizan un audio
+Estrategias de marketing: no son públicas
+
+## Públicos:
+
+Spotify Charts
+YouTube views
+Rankings globales (Billboard, Spotify)
+
+## Semi-públicos:
+
+TikTok (requiere recolección manual)
+Spotify API (requiere acceso técnico)
+
+## Privados:
+
+Datos de sellos discográficos
+Estrategias de marketing
+Inversión promocional
+
+## ¿Qué datos son confiables y cuáles no?
+* Alta confiabilidad: Spotify, YouTube, IFPI
+* Media confiabilidad: TikTok (por recolección manual y variabilidad)
+* Baja confiabilidad: estimaciones indirectas (marketing, impacto cultural)
 
 ## Preguntas a responder:
-* ¿Cuáles son las preguntas que se pueden responder con los datos?
-
+* ¿Qué características tienen las canciones que alcanzan el Top 10?
+* ¿Qué rol juega TikTok en la viralidad musical?
+* ¿Las colaboraciones aumentan la probabilidad de éxito?
+* ¿Existe un patrón en la duración o estructura de los hits?
+* ¿Cuánto influye la inclusión en playlists?
+* ¿Qué diferencias existen entre hits locales (Chile) y globales?
+* ¿Qué factores permiten que una canción “cruce fronteras”?
 ## Historia Visual:
 * ¿Cuál es la historia de su proyecto de investigación? ¿Qué es lo nuevo?
 + ¿Qué tipo de elementos digitales les gustaría tener? ¿Cómo esos elementos ayudarán a contar su historia? Adjunten ejemplos y referencias
