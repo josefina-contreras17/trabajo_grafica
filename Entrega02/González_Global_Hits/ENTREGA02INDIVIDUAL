@@ -1,0 +1,49 @@
+2. *Base de datos limpia y estructurada (en formato csv)*
+pd.read_csv (c:\Users\USUARIO\Downloads\basededatos_hit - Hoja 1.csv)
+Antes de crear esta base limpia y estructurada, realizamos una investigación más global acerca de las canciones que 
+están dentro del Top y por lo tanto, llegaron a ser el hit, en los años correspondientes de nuestra investigación. 
+
+3. *Ficha técnica y diccionario de datos*
+Investigamos listas top de spotify desde el año 2021 al 2025 y principios del 2026, donde dentro de estas, 
+buscamos las canciones chilenas, las cuales en su mayoría son urbanas o reggaetón y protagonizadas por hombres.
+Además, clasificamos nuestra base de datos en nombre de la canción, nombre de los artistas, género musical, duración 
+de la canción, año, posición en el top, si es hombre o mujer el cantante y si la canción es una colaboración o es una 
+canción solista. En conclusión, nos dimos cuenta que la mayoría de las canciones que “pegan” son canciones más cortas, 
+que están alrededor de los 2 y 3 minutos, de las cuales todas son música urbana y de reggaetón, además de ser 
+protagonizadas por hombres y sus nombres son repetitivos (casi siempre son los mismos artistas que están en el top),
+ la mujer que siempre está (en más de dos casos) es Katteyes. 
+
+ <table>
+    <tr>
+        <th>Canción</th>
+        <th>Artista</th>
+        <td>Duración</td>
+        <td>Posición</td>
+           <td>Posición</td>
+        <td>Año</td>
+    </tr>
+</table>
+
+4. Documentación
+Para construir nuestra base de datos de canciones chilenas que han estado en el Top entre 2021 y comienzos de 2026, realizamos un proceso de limpieza. Primero, recopilamos la información desde distintas fuentes (principalmente rankings de spotify, noticias y charts históricos). En esta etapa, el principal problema fue que los datos vienen en formatos distintos y que muchas veces las canciones no tienen una posición fija, puede estar en el top un día y luego no, algunas canciones tienen posiciones exactas y otras solo se indican que estuvieron dentro del top en un rango (por ejemplo 10-15 o top 20).
+Luego decidimos estandarizar los datos e ir clasificándolos entre: Nombre de la canción
+Artista(s), Año/Mes aproximado, Duración, Género musical, Género del artista (hombre/mujer), Colaboración (sí/no), Posición en el ranking. Como no todas las canciones tienen un número exacto, optamos por mantener las posiciones exactas cuando existían y usar rangos cuando no había precisión. 
+
+Nos falta eliminar duplicados. Esto es necesario porque algunas canciones aparecen en varios años o versiones (por ejemplo, remixes). En esos casos, dejaremos solo la versión más relevante según impacto en el ranking. 
+Finalmente, revisamos consistencia: que todas las canciones tuvieran datos completos, que los géneros fueran coherentes (ej: reggaetón, trap, pop urbano) y que las colaboraciones estuvieran bien identificadas.
+Las herramientas utilizadas fueron Google Sheets, búsqueda manual y uso de inteligencia artificial cerrada para recaudación de datos.
+Preguntas que se pueden responder con la base de datos:
+¿Qué género musical domina en los hits chilenos? Hasta el momento nuestra investigación responde que el reggaeton es el que domina todos los años, ligado a sus derivadas como trap latino y reggaeton melódico.
+¿Las colaboraciones tienen más éxito? La mayoría de las canciones que tienen la primera posición en el top son colaboraciones, especialmente desde 2023 en adelante. 
+¿Cómo ha cambiado la duración de las canciones? las canciones tienden a ser cada vez más cortas.
+¿Los artistas hombres son mayoría en los hits? si, desde el 2021 al 2026, las mujeres son muy pocas (entre 2 y 3) siendo solo una que ha tenido un solo top en el ranking. 
+Adjunto Links:
+https://www.cnnchile.com/cultura/spotify-wrapped-2024-revisa-aqui-tu-resumen-musical-del-ano_20241204
+https://www.24horas.cl/tendencias/spotify-wrapped-2024-el-top-de-canciones-y-artistas-de-chile?
+https://eldesconcierto.cl/2023/11/29/spotify-wrapped-2023-estos-fueron-los-artistas-mas-escuchados-en-chile
+https://charts.spotify.com/ 
+https://www.billboard.com/charts/ 
+https://www.billboard.com/charts/year-end/ 
+https://www.youtube.com/watch?v=hA8rfYmEwyc&list=RDhA8rfYmEwyc&start_radio=1
+
+5. Nuestra base de datos dividida por años, será adjuntada en nuestra carpeta colaborativa, al igual que la base de datos antigua con los datos originales y sin limpiar. 
