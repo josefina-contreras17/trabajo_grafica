@@ -18,7 +18,6 @@ También revisé la variable “género_musical”, que fue construida manualmen
 
 Finalmente, eliminé posibles duplicados y verifiqué que no hubiera filas completamente vacías o con datos irrelevantes. Este proceso se realizó utilizando herramientas básicas como Excel/Google Sheets, particularmente funciones de ordenamiento, filtros y revisión manual.
 
----
 
 ## Herramientas utilizadas
 
@@ -30,8 +29,6 @@ Finalmente, eliminé posibles duplicados y verifiqué que no hubiera filas compl
   - Revisión visual  
 
 El proceso fue mayoritariamente manual debido al tamaño acotado de la base, lo que permitió un mayor control sobre la calidad de los datos.
-
----
 
 ## Fuentes de datos utilizadas
 
@@ -46,7 +43,6 @@ Estas fuentes fueron elegidas por su alta confiabilidad y relevancia para el est
 
 Se optó por no utilizar datos de otras plataformas como TikTok o Instagram debido a la dificultad de acceso a datos sistematizados y confiables.
 
----
 
 ## Preguntas que se pueden responder con la base de datos
 
@@ -56,25 +52,20 @@ Una vez limpia la base de datos, es posible responder diversas preguntas relevan
 
 A través de una tabla dinámica, se puede comparar la posición promedio de canciones con y sin colaboraciones, lo que permite evaluar si existe una relación entre trabajo colaborativo y éxito.
 
----
 
 ### 2. ¿Cuál es la duración promedio de las canciones que aparecen en el ranking?
 
 Esto permite identificar si existe un patrón en la duración de los hits, por ejemplo, si tienden a ser más cortos para facilitar su consumo en plataformas digitales.
 
----
 
 ### 3. ¿Qué géneros musicales predominan en el Top 50 de Spotify Chile?
 
 Mediante el conteo de frecuencias por género musical, se puede observar la concentración de estilos y determinar si existe una hegemonía de la música urbana en los rankings.
 
----
 
 ### 4. ¿Qué artistas aparecen con mayor frecuencia en el ranking?
 
 A partir de un conteo de ocurrencias, se puede identificar si existe una concentración de éxito en ciertos artistas, lo que permitiría analizar la estructura de la industria musical local.
-
----
 
 ## Reflexión final
 
