@@ -15,3 +15,8 @@ En base a esto surgen nuevas preguntas de investigación:
 
 ## Nueva base de datos
 https://docs.google.com/spreadsheets/d/10AMx2lLbAFm929rjuWCXq4aV0EjhRpHxW_hq0uGffqI/edit?usp=sharing 
+
+
+Falta: Avance de su proyecto en relación con la hipótesis y preguntas de investigación: A nivel general y, por tanto, grupal, cómo las bases de datos les ayudaron a avanzar en la construcción de la historia hasta ahora. 
+
+Cómo modificaron o reforzaron estos elementos lo que tenían planteado como historia.
