@@ -1,4 +1,4 @@
-## Readme general de la entrega 
+## Readme general de la entrega: Actualizaciones
 
 Guiados por sus consejos, hicimos un cambio en la historia que vamos a contar. Analizamos las 250 mejores canciones del rock chileno, a partir de sus características sonoras medibles. La lista de canciones fue creada por la revista Rockaxis, especializada en música. Usamos variables como danceability, energy, valence, tempo, acousticness, entre otras. Estas variables provienen de las métricas de Spotify. Con esto queremos identificar si existe una estructura común entre las canciones que conforman este ranking, una cierta homogeneidad.
 
