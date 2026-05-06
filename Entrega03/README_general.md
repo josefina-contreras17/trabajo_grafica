@@ -13,3 +13,5 @@ En base a esto surgen nuevas preguntas de investigación:
 * ¿Qué patrones se repiten en variables como energía, valencia, tempo o danceability?
 * ¿Es posible definir una “canción tipo” a partir del promedio de estos atributos?
 
+## Nueva base de datos
+https://docs.google.com/spreadsheets/d/10AMx2lLbAFm929rjuWCXq4aV0EjhRpHxW_hq0uGffqI/edit?usp=sharing 
