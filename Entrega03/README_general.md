@@ -9,7 +9,7 @@ Las mejores canciones del rock chileno comparten atributos sonoros similares, lo
 En base a esto surgen nuevas preguntas de investigación: 
 
 * ¿Existe una identidad sonora en el rock chileno?
-¿Hay homogeneidad en las características sonoras de las canciones del ranking?
-¿Qué patrones se repiten en variables como energía, valencia, tempo o danceability?
-¿Es posible definir una “canción tipo” a partir del promedio de estos atributos?
+* ¿Hay homogeneidad en las características sonoras de las canciones del ranking?
+* ¿Qué patrones se repiten en variables como energía, valencia, tempo o danceability?
+* ¿Es posible definir una “canción tipo” a partir del promedio de estos atributos?
 
