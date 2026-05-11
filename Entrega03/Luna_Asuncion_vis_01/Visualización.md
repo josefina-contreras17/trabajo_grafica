@@ -19,6 +19,8 @@ Estas variables son atributos musicales desarrolladas por Spotify para describir
 
 Para nuestro análisis se priorizaron las variables Energy, Danceability, Valence, Acousticness, Instrumentalness, Liveness y Speechiness, ya que permiten representar de manera más clara y comparable el perfil sonoro promedio del rock chileno. Estas ya que comparten una misma escala de medición entre 0 y 1, lo que facilita su visualización. 
 
+![Bar Chart](newplot.png)
+
 A partir de estos datos podemos construir un perfil de la canción de rock nacional. Las canciones comparten altos niveles de energía, bajos niveles de acousticness y speechiness, y valores medios en danceability y valence. Dicho de otra forma, las canciones del listado suelen ser intensas, principalmente eléctricas, poco habladas y moderadamente bailables. 
 
 La variable con el promedio más alto es energy, cercana a 0.7 en una escala de 0 a 1. Esto indica que gran parte de las canciones emblemáticas dentro del género poseen niveles altos de intensidad sonora, asociados a guitarras eléctricas, baterías marcadas, etc.. En contraste, acousticness presenta valores bajos, lo que sugiere que predominan canciones poco acústicas y más cercanas a una producción amplificada.
