@@ -29,4 +29,3 @@ La variable con el promedio más alto es energy, cercana a 0.7 en una escala de 
 
 Nuestra pregunta inicial era si se podía determinar una identidad sonora dentro del rock chileno. Los datos no entregan una respuesta 100%  absoluta, pero sí permiten afirmar que las canciones más representativas del género se acercan a un mismo perfil: energético, eléctrico, emocionalmente equilibrado y construido principalmente desde estructuras tradicionales del rock. La “canción promedio” del rock chileno funciona como una idea compartida entre distintas generaciones y estilos musicales.
 
-Entrega03/Luna_Asuncion_vis_01/visualizacion (1).html 
