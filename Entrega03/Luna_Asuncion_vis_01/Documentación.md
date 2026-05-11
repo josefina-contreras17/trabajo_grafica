@@ -70,4 +70,4 @@ Liveness: probabilidad de grabación en vivo.
 * Observaciones sobre la base de datos: la base permite analizar tendencias generales dentro del rock chileno, pero no busca medir su calidad musical. Los atributos musicales utilizados son aproximaciones estadísticas y algorítmicas desarrolladas por Spotify, por lo que no reemplazan interpretaciones culturales o subjetivas de la música. 
 
 * Base de datos
-
+[Descargar base de datos](mejorescancionesrocklatino_original%20(1).csv)
