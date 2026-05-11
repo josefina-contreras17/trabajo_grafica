@@ -1,7 +1,7 @@
 ## Readme general de la entrega: Actualizaciones
 
 Guiados por sus consejos, hicimos un cambio en la historia que vamos a contar. Analizamos las 250 mejores canciones del rock chileno, a partir de sus características sonoras medibles. La lista de canciones fue creada por la revista Rockaxis, especializada en música. Usando variables como danceability, energy, valence, tempo, acousticness, entre otras. Estas variables provienen de las métricas de Spotify. Con esto queremos identificar si existe una estructura común entre las canciones que conforman este ranking y una cierta homogeneidad de ellas.
-
+Separamos el trabajo que tuvimos que actualizar desde cero donde Asunción Luna se encargó del Readme general y las nuevas investigaciones, Geraldine González se encargó de la base de datos nueva y actualizarla (limpiando la base de datos) y Josefina Contreras se encargó de realizar las visualizaciones.
 ## Nueva hipótesis: 
 
 Las mejores canciones del rock chileno comparten atributos sonoros similares, lo que podría sugerir la existencia de una “canción promedio” dentro del género nacional. Bandas músicales repetidas, donde podemos destacar a miembros de "Los prisioneros" y "La nueva Ola", un género músical que hizo presencia en los años 80 y 90 en nuestro país. 
