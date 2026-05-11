@@ -23,6 +23,8 @@ Para nuestro análisis se priorizaron las variables Energy, Danceability, Valenc
 
 A partir de estos datos podemos construir un perfil de la canción de rock nacional. Las canciones comparten altos niveles de energía, bajos niveles de acousticness y speechiness, y valores medios en danceability y valence. Dicho de otra forma, las canciones del listado suelen ser intensas, principalmente eléctricas, poco habladas y moderadamente bailables. 
 
+![Bar Chart](newplot.png)
+
 La variable con el promedio más alto es energy, cercana a 0.7 en una escala de 0 a 1. Esto indica que gran parte de las canciones emblemáticas dentro del género poseen niveles altos de intensidad sonora, asociados a guitarras eléctricas, baterías marcadas, etc.. En contraste, acousticness presenta valores bajos, lo que sugiere que predominan canciones poco acústicas y más cercanas a una producción amplificada.
 
 Nuestra pregunta inicial era si se podía determinar una identidad sonora dentro del rock chileno. Los datos no entregan una respuesta 100%  absoluta, pero sí permiten afirmar que las canciones más representativas del género se acercan a un mismo perfil: energético, eléctrico, emocionalmente equilibrado y construido principalmente desde estructuras tradicionales del rock. La “canción promedio” del rock chileno funciona como una idea compartida entre distintas generaciones y estilos musicales.
