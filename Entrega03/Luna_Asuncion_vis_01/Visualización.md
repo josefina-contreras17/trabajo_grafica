@@ -31,7 +31,7 @@ Nuestra pregunta inicial era si se podía determinar una identidad sonora dentro
 
 ## Visualización interactiva
 
-[Ver visualización interactiva](visualizacion(1).html)
+[Ver visualización interactiva](visualizacion_1.html)
 
 ## Visualización interactiva
 
