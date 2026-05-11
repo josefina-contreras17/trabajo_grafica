@@ -53,16 +53,12 @@ https://www.24horas.cl/data/las-250-mejores-canciones-del-rock-chileno-revisa-el
 
 * Variables: Danceability, Energy, Acousticness, Instrumentalness, Liveness, Speechiness, Valence. Estas fueron elegidas ya que comparten una misma escala de medición entre 0 y 1, lo que facilita su visualización. Variables como Tempo y Loudness no fueron incluidas en los gráficos principales debido a que utilizan escalas distintas, lo que dificultaba su comparación visual.
 
-|Danceability | qué tan bailable es una canción |
+Danceability: qué tan bailable es una canción
+
 Energy: nivel de intensidad y actividad.
+
 Loudness: volumen general en decibeles.
 Speechiness: presencia de palabras habladas.
 Acousticness: probabilidad de que una canción sea acústica.
 Instrumentalness: probabilidad de ausencia de voces.
 Liveness: probabilidad de grabación en vivo.
-| Atributo       | Descripción |
-| ------------- |:-------------:|
-| Dan      | right foo     |
-| left bar      | right bar     |
-| left baz      | right baz     |
-
