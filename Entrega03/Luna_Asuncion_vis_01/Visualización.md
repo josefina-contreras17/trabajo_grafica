@@ -4,7 +4,7 @@ El rock chileno, desde sus inicios, es un género diverso. Desde Los Prisioneros
 
 Estas variables son atributos musicales desarrolladas por Spotify para describir técnicamente cómo suena una canción. Estas son: 
 
-* # Danceability: mide qué tan bailable es una canción considerando elementos como ritmo, estabilidad y regularidad. Mientras más cercano a 1, más apta es para bailar.
+* Danceability: mide qué tan bailable es una canción considerando elementos como ritmo, estabilidad y regularidad. Mientras más cercano a 1, más apta es para bailar.
 * Energy: el nivel de intensidad y actividad de una canción. Valores altos suelen asociarse a canciones rápidas, fuertes y dinámicas.
 * Key: identifica la tonalidad principal de la canción.
 * Loudness: el volumen general de la canción en decibeles (dB). Generalmente, canciones más intensas presentan valores más cercanos a 0.
