@@ -58,7 +58,16 @@ Danceability: qué tan bailable es una canción
 Energy: nivel de intensidad y actividad.
 
 Loudness: volumen general en decibeles.
+
 Speechiness: presencia de palabras habladas.
+
 Acousticness: probabilidad de que una canción sea acústica.
+
 Instrumentalness: probabilidad de ausencia de voces.
+
 Liveness: probabilidad de grabación en vivo.
+
+* Observaciones sobre la base de datos: la base permite analizar tendencias generales dentro del rock chileno, pero no busca medir su calidad musical. Los atributos musicales utilizados son aproximaciones estadísticas y algorítmicas desarrolladas por Spotify, por lo que no reemplazan interpretaciones culturales o subjetivas de la música. 
+
+* Base de datos
+
