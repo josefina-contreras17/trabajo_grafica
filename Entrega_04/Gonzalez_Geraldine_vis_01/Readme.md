@@ -7,3 +7,5 @@ Frases como “La música no es solo una forma de entretención” resignifican 
 La paleta cromática sobria y el contraste entre el fondo y el texto nos ayudan a entregar esta estética más contemporánea coherente con la temática cultural y musical de la pieza. En conjunto, la composición transmite esta sensación de conexión emocional con la música y las canciones más escuchadas. 
 ## Gráficos
 Los gráficos y la utilización de ellos, nos ayuda a demostrar el impacto que tuvieron estas canciones y los artistas icónos de la época, fotografías de los discos más conocidos buscan esta conexión con las personas que los escucharon y escuchan actualmente, y aún más, quienes tuvieron los discos de forma física. Quise utilizar también gráfico de barras para demostrar esta alza en el medio de los años 80 y 90, años que corresponden a la mayoría de las canciones que hasta la actualidad, escuchamos. 
+## Codigo QR
+Ideas como codigo qr o botones que nos lleven a otras páginas donde se profundiza acerca de las canciones más escuchadas, historia de los artistas, links de la misma música y contribuyan para realizar un viaje dentro de la webstory más completa y entretenida. 
