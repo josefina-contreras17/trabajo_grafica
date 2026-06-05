@@ -10,7 +10,8 @@ El grupo debe adjuntar un archivo (su README general) con la argumentación tant
     * _Tipografía_: El sistema tipográfico se basa en el principio de contraste y legibilidad. Para los títulos utilizamos TAN Nimbus, una fuente con mucho carácter, trazos gruesos y un estilo vintage que establece inmediatamente la jerarquía visual y el tono rockero del proyecto. Para el cuerpo de texto (párrafos) optamos por Montserrat, una tipografía sans-serif neutra, geométrica y de alta legibilidad. Esta combinación equilibra perfectamente la estética nostálgica de los 80s/90s con los estándares de accesibilidad del diseño web actual.  
     * _Recursos Gráficos y Fotografía_: Los recursos gráficos incluyen iconografía musical retro (vinilos, casetes, micrófonos clásicos) y patrones de fondo (como el semitono o estilo fanzine) que rompen la monotonía del color sólido. Además, el sistema de botones (UI Kit) utiliza affordances claros, como bordes redondeados e íconos desplegables, para guiar la interacción del usuario. La fotografía mantiene un tratamiento de duotono o alto contraste con ruido fotográfico, unificando el material de archivo.
 ### Wireframes:
-* Link al prototipo: [miro](https://miro.com/welcomeonboard/Zmh4SHFzSUJsMEIwVFJEMHB1dWJEOE95M2VVWlZGSk94Y2hBbXNPU29HblZrMDQrcTVoTE5EUTRQREZMeGFWSDhzRFJFWTI5SUVnODhtMDJKN0NPbjJyTHZpTWxnSnU0dHhWQjg0TXBOUi90M2VvcUxEemt6VXZzS2NOVDJ5dDVQdGo1ZEV3bUdPQWRZUHQzSGl6V2NBPT0hdjE=?share_link_id=225639621193)
+* Link al prototipo:
+* Link Mapa de viaje: [miro](https://miro.com/welcomeonboard/Zmh4SHFzSUJsMEIwVFJEMHB1dWJEOE95M2VVWlZGSk94Y2hBbXNPU29HblZrMDQrcTVoTE5EUTRQREZMeGFWSDhzRFJFWTI5SUVnODhtMDJKN0NPbjJyTHZpTWxnSnU0dHhWQjg0TXBOUi90M2VvcUxEemt6VXZzS2NOVDJ5dDVQdGo1ZEV3bUdPQWRZUHQzSGl6V2NBPT0hdjE=?share_link_id=225639621193)
 * Justificación de la estructura y propuesta de flujo.
     * falta rellenar esto con la propuesta
 
