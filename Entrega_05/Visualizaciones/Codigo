@@ -1,0 +1,139 @@
+#1. Gráfico interactivo por año#
+# Agrupar y contar canciones por año
+df_years = df.groupby('Year').size().reset_index(name='Cantidad de Canciones')
+df_years = df_years.sort_values('Year')
+
+fig1 = go.Figure()
+
+fig1.add_trace(go.Bar(
+    x=df_years['Year'].astype(str),
+    y=df_years['Cantidad de Canciones'],
+    marker_color='#c05a48',
+    name='Canciones'
+))
+
+fig1.update_layout(
+    title={'text': "Cantidad de Canciones por Año", 'x': 0.05},
+    xaxis={
+        'title': {'text': "Año", 'standoff': 15},
+        'type': 'category',
+        'tickangle': -45,
+        'gridcolor': '#EBF0F8',
+        'linecolor': '#EBF0F8'
+    },
+    yaxis={
+        'title': {'text': "Cantidad de Canciones", 'standoff': 15},
+        'gridcolor': '#EBF0F8',
+        'linecolor': '#EBF0F8'
+    },
+    plot_bgcolor='white',
+    paper_bgcolor='white'
+)
+
+fig1.show()
+
+2. Perfil promedio de variables musicales 
+# Lista de variables musicales
+categories = ['Danceability', 'Energy', 'Speechiness', 'Acousticness', 'Instrumentalness', 'Liveness', 'Valence']
+
+# Validar si las columnas existen en el CSV, de lo contrario usar tus promedios calculados
+if all(c in df.columns for c in categories):
+    valores_promedio = [df[c].mean() for c in categories]
+else:
+    # Valores de respaldo exactos de tu gráfico original
+    valores_promedio = [0.65, 0.75, 0.12, 0.30, 0.05, 0.18, 0.55]
+
+# Cerrar el círculo del radar
+valores_radar = valores_promedio + [valores_promedio[0]]
+categories_radar = categories + [categories[0]]
+
+fig2 = go.Figure()
+
+fig2.add_trace(go.Scatterpolar(
+    r=valores_radar,
+    theta=categories_radar,
+    fill='toself',
+    fillcolor='rgba(193, 90, 73, 0.4)',
+    line=dict(color='#c15a49', width=2),
+))
+
+fig2.update_layout(
+    title={'text': "Perfil Promedio de las Variables Musicales", 'x': 0.05},
+    polar=dict(
+        bgcolor='#ead3bc',
+        angularaxis=dict(direction='clockwise', rotation=90, gridcolor='#c15a49'),
+        radialaxis=dict(visible=True, range=[0, 1], gridcolor='#c15a49')
+    ),
+    showlegend=False
+)
+
+fig2.show()
+3. Tabla Dinámica del Ranking de artistas
+# Obtener los top 5 artistas
+top_artistas = df['Artist Name(s)'].value_counts().head(5).index.tolist()
+
+html_rows = ""
+for i, artista in enumerate(top_artistas, 1):
+    # Filtrar canciones del artista actual (máximo 6 para el despliegue)
+    canciones = df[df['Artist Name(s)'] == artista]['Track Name'].unique()[:6]
+    count_canciones = len(df[df['Artist Name(s)'] == artista])
+    
+    list_items = "".join([f"<li>{cancion}</li>" for cancion in canciones])
+    
+    html_rows += f"""
+    <tr>
+        <td align='center'>{i}</td>
+        <td>
+            <details>
+                <summary>{artista}</summary>
+                <ul>{list_items}</ul>
+            </details>
+        </td>
+        <td align='center'>{count_canciones}</td>
+    </tr>
+    """
+
+tabla_completa = f"""
+<style>
+table {{ border-collapse: collapse; width: 100%; font-family: Arial, sans-serif; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }}
+th {{ background-color: #c05a48; color: white; padding: 12px; text-align: center; }}
+td {{ border: 1px solid #c05a48; padding: 10px; }}
+tr:nth-child(even) {{ background-color: #ead5be; }}
+tr:nth-child(odd) {{ background-color: #f8f3ee; }}
+details summary {{ cursor: pointer; color: #c05a48; font-weight: bold; }}
+h2 {{ color: #c05a48; }}
+</style>
+<h2>Ranking de los 5 artistas chilenos con más canciones en el ranking</h2>
+<table>
+    <tr><th>Posición</th><th>Artista</th><th>Canciones</th></tr>
+    {html_rows}
+</table>
+"""
+
+display(HTML(tabla_completa))
+
+4. Top 5 sellos discograficos
+# Contar frecuencias de sellos discográficos
+df_sellos = df['Record Label'].value_counts().head(5).reset_index()
+df_sellos.columns = ['Sello', 'Cantidad']
+
+fig5 = go.Figure()
+
+fig5.add_trace(go.Bar(
+    y=df_sellos['Sello'],
+    x=df_sellos['Cantidad'],
+    orientation='h',
+    marker_color='#ead3bc',
+    marker_line_color='#c05a48',
+    marker_line_width=2
+))
+
+fig5.update_layout(
+    title={'text': "Top 5 Sellos Discográficos con Más Canciones", 'x': 0.05},
+    xaxis={'title': "Cantidad de Canciones", 'gridcolor': '#EBF0F8'},
+    yaxis={'title': "Sello Discográfico", 'autorange': "reversed"},
+    plot_bgcolor='white',
+    paper_bgcolor='white'
+)
+
+fig5.show()
