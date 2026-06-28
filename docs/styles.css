@@ -1,0 +1,455 @@
+/* ==========================================================================
+   RESET & VARIABLES
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-box: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #FF7F0E;      /* Naranja Plotly uniforme */
+    --primary-hover: #E06B00;
+    --dark-bg: #12161A;           /* Fondo oscuro estético */
+    --dark-card: #1C2329;         /* Tarjetas oscuras */
+    --light-bg: #F8F9FA;          /* Fondo claro limpio */
+    --text-main: #2D3142;         /* Texto legible principal */
+    --text-muted: #6C757D;
+    --white: #FFFFFF;
+}
+/* ==========================================================================
+   FONDO CON IMAGEN MUSICAL Y TRANSPARENCIA
+   ========================================================================== */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-main);
+    background-color: var(--white);
+    line-height: 1.6;
+    position: relative; /* Necesario para posicionar el fondo */
+    min-height: 100vh;
+}
+
+/* Creamos una capa exclusiva para la imagen de fondo */
+body::before {
+    content: "";
+    position: fixed; /* Se mantiene estático mientras el usuario baja por la página */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* Reemplaza 'ruta-de-tu-imagen-de-guitarras.jpg' por el nombre o link de tu imagen */
+    background-image:url(imagen_fondoguitarra.webp) ; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* Ajusta la transparencia aquí (0.05 es muy sutil, 0.1 aumenta la intensidad) */
+    opacity: 0.3; 
+    
+    z-index: -1; /* Envía la imagen al fondo, detrás de textos, gráficos y secciones */
+    pointer-events: none; /* Evita que interfiera con los clics o interacciones de la web */
+}
+
+/* ==========================================================================
+   BARRA DE NAVEGACIÓN (NAVBAR)
+   ========================================================================== */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(18, 22, 26, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.music-icon {
+    width: 28px;
+    height: 28px;
+    color: var(--primary-color);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.75)), url('Tren al Sur.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    padding-top: 60px;
+}
+
+.overlay {
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero h1 span {
+    display: block;
+    color: var(--primary-color);
+    font-weight: 300;
+    font-size: 2.2rem;
+    margin-top: 5px;
+}
+
+.hero .intro {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 35px;
+    opacity: 0.9;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* BOTONES */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    border: 2px solid var(--primary-color);
+}
+
+.btn:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border-color: var(--white);
+}
+
+.btn-secondary:hover {
+    background-color: var(--white);
+    color: var(--dark-bg);
+    border-color: var(--white);
+}
+
+/* ==========================================================================
+   SECCIONES GENERALES
+   ========================================================================== */
+.section {
+    padding: 80px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-muted);
+    margin-bottom: 50px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dark {
+    background-color: var(--dark-bg);
+    color: var(--white);
+}
+
+/* Layout partido para historia */
+.layout-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.side-img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.text-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.text-content h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--primary-color);
+    margin-top: 10px;
+}
+
+.text-content p {
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+}
+
+/* ==========================================================================
+   BLOQUES DE DATOS E IFRAMES
+   ========================================================================== */
+.data-block {
+    background: var(--light-bg);
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.dark .data-block {
+    background: var(--dark-card);
+}
+
+.grafico-titulo {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.descripcion {
+    color: var(--text-muted);
+    margin-bottom: 25px;
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    background: var(--white);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+.grafico-frame {
+    width: 100%;
+    height: 500px;
+    display: block;
+}
+
+/* Grid de textos analíticos */
+.historia-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.historia-item h4 {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.single-text-block h4 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.single-text-block p {
+    margin-bottom: 15px;
+}
+
+.data-grid-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.small-iframe .grafico-frame {
+    height: 400px;
+}
+
+/* ==========================================================================
+   CITAS Y ELEMENTOS ESTÉTICOS
+   ========================================================================== */
+.custom-quote {
+    font-size: 1.5rem;
+    font-style: italic;
+    border-left: 5px solid var(--primary-color);
+    padding-left: 20px;
+    max-width: 800px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+.expert-section {
+    text-align: center;
+    padding: 40px 0;
+    margin: 40px 0;
+    border-top: 1px solid #E9ECEF;
+    border-bottom: 1px solid #E9ECEF;
+}
+
+.expert-quote {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: var(--text-muted);
+    margin-top: 15px;
+}
+
+/* ==========================================================================
+   TARJETAS DE PROTAGONISTAS (CARDS)
+   ========================================================================== */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: var(--dark-card);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.card-img-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.card:hover .card-img-container img {
+    transform: scale(1.05);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+.card-body p {
+    font-size: 0.9rem;
+    color: #A0AAB2;
+}
+
+/* ==========================================================================
+   SECCIÓN FINAL
+   ========================================================================== */
+.final {
+    background: linear-gradient(rgba(255, 127, 14, 0.9), rgba(224, 107, 0, 0.95)), url('Pateando Piedras.jpg') no-repeat center center/cover;
+    color: var(--white);
+    text-align: center;
+    padding: 100px 0;
+}
+
+.final h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.final p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN (PANTALLAS MEDIANAS Y PEQUEÑAS)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Simplificado para móviles */
+    }
+    .layout-split, .historia-grid, .data-grid-two {
+        grid-template-columns: 1fr;
+    }
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    .hero h1 span {
+        font-size: 1.6rem;
+    }
+    .section {
+        padding: 50px 0;
+    }
+}
