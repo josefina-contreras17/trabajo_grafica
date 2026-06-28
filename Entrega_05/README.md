@@ -14,3 +14,10 @@ El análisis de los datos permitió respaldar esta hipótesis. Si bien existe un
 El análisis por décadas también permitió comprobar que estos atributos se mantienen relativamente estables a lo largo del tiempo, reforzando la existencia de una identidad sonora compartida. Al mismo tiempo, los datos revelaron un segundo hallazgo que no formaba parte de la hipótesis inicial: la fuerte concentración de canciones durante la década de 1990. Este fenómeno llevó al equipo a incorporar una dimensión histórica al reportaje, relacionando el auge del rock chileno con la transición democrática, la expansión de la industria musical y la apertura cultural del país.
 
 De esta manera, el proyecto no solo logró respaldar su hipótesis inicial, sino que también amplió la historia hacia un análisis que combina datos musicales e interpretación histórica para comprender cómo se construyó la identidad del rock chileno.
+
+# Tabla de autoría
+
+| Integrante | Responsabilidades |
+|------------|-------------------|
+| **Asunción Luna** | Gráficos de radar, tabla de artistas más escuchados y de los atributos, documentación, redacción de la historia y recopilación de imágenes. |
+| **Geraldine González** | Recopilación de imágenes, diseño y armado de la página web, gráfico de barras y gráfico de las discográficas, redacción de la historia. |
