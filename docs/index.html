@@ -1,0 +1,426 @@
+
+   <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Chileno: La Banda Sonora de la Memoria</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="music-icon">
+                    <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+                </svg>
+                <span>RockChileno</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#hipotesis">Hipótesis</a></li>
+                <li><a href="#datos">Datos</a></li>
+                <li><a href="#protagonistas">Protagonistas</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="overlay">
+            <h1>
+                Rock Chileno:
+                <span>La Banda Sonora de la Memoria</span>
+            </h1>
+            <p class="intro">
+                Más de 230 canciones revelan cómo la música se convirtió en un archivo emocional durante y después de la dictadura.
+            </p>
+            <div class="hero-buttons">
+                <a href="#historia" class="btn">Explorar historia</a>
+                <a href="#datos" class="btn btn-secondary">Ver los Datos</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="historia" class="section">
+        <div class="container layout-split">
+            <div class="text-content">
+                <h2>Cuando las canciones guardan recuerdos</h2>
+                <p>
+                    Durante los años de dictadura y la transición democrática, el rock chileno se transformó en una herramienta de identidad, resistencia y memoria colectiva.
+                </p>
+                <p>
+                    A través del análisis de más de 230 canciones, buscamos descubrir si existe un ADN sonoro común que explique 
+            por qué ciertas canciones quedaron grabadas en la memoria nacional. Para lograrlo, realizamos una investigación 
+            basada en la base de datos de la lista de Spotify <strong>"Las 250 canciones más escuchadas: rock latino chileno"</strong>, 
+            un proyecto inspirado directamente en la curatoría de la revista <em>Rockaxis</em>. 
+                </p>
+            </div>
+            <div class="image-content">
+                <img src="Tren al Sur.jpg" alt="Tren al Sur" class="side-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="hipotesis" class="section dark">
+        <div class="container">
+            <h2>Nuestra hipótesis</h2>
+            <blockquote class="custom-quote">
+                "Las canciones más exitosas del rock chileno comparten atributos acústicos similares, formando una especie de 'canción promedio' que acompañó una época de profundas transformaciones sociales."
+            </blockquote>
+        </div>
+    </section>
+
+    <section id="datos" class="section">
+        <div class="container">
+            <h2 class="section-title">Explora los datos</h2>
+            <p class="section-subtitle">
+                Los siguientes gráficos fueron construidos a partir de una base de datos de más de 230 canciones chilenas.
+            </p>
+
+            <div class="data-block">
+                <h3 class="grafico-titulo">La memoria tiene ritmo: la evolución del rock chileno</h3>
+                <p class="descripcion">
+                    Este gráfico permite explorar cómo evolucionó la producción musical chilena a lo largo de las décadas.
+                </p>
+                <div class="iframe-container">
+                    <iframe src="grafico_interactivo_anos.html" class="grafico-frame" width= "100%" height="500 " style="border:none;"></iframe>
+                </div>
+
+                <div class="historia-grid">
+                    <div class="historia-item">
+                        <h4>¿Por qué los noventa dominan el rock chileno?</h4>
+                        <p>La evolución temporal permite observar cómo el rock chileno acompañó distintas transformaciones sociales y culturales. Las canciones funcionan como registros emocionales que sobreviven al paso del tiempo.</p>
+                    </div>
+                    <div class="historia-item">
+                        <h4>¿Qué ocurrió en 1997?</h4>
+                        <p>El año 1997 fue la cúspide de un proceso de transición democrática, apertura cultural y un fenómeno comercial. Se publicaron la mayor cantidad de discos exitosos de la década expandiendo el rock hacia la electrónica y el pop melancólico.</p>
+                    </div>
+                    <div class="historia-item">
+                        <h4>La Democracia</h4>
+                        <p>Según el libro <em>Anarkía Dinamita</em> de Carlos Basso, el regreso a la democracia contribuyó a que las bandas dejaran de lado la "canción protesta" para explorar crisis, consumo y vida urbana.</p>
+                    </div>
+                    <div class="historia-item">
+                        <h4>Discográficas</h4>
+                        <p>La llegada de sellos internacionales (EMI, Sony, Warner) y MTV Latino, junto a la expansión del CD, permitieron una explosión de nuevas propuestas y una visibilidad sin precedentes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="data-block">
+                <h3 class="grafico-titulo">El ADN del Rock Latino</h3>
+                <p class="descripcion">
+                    Este radar interactivo resume los principales atributos acústicos presentes en las canciones analizadas.
+                </p>
+                <div class="iframe-container">
+                    <iframe src="grafico_radar_interactivo.html" class="grafico-frame" style="border:none;"></iframe>
+                </div>
+
+                <div class="single-text-block">
+                    <h4>¿Existe una canción promedio chilena?</h4>
+                    <p>Los niveles de energía, bailabilidad y ritmo presentan patrones similares entre canciones de distintas décadas, reforzando la idea de una identidad sonora compartida.</p>
+                    <p>
+                        El rock chileno parece imposible de resumir. Los Jaivas, Los Prisioneros, Los Tres, La Ley o Los Bunkers pertenecen a generaciones y contextos diferentes. Sin embargo, al observar las mejores canciones, los datos revelan patrones técnicos utilizando variables obtenidas desde Spotify (Energy, Danceability, Acousticness, etc.) capaces de describir la música de forma matemática.
+                    </p>
+                </div>
+            </div>
+            <div class="radar-section-container">
+    <h2 class="radar-section-title">Análisis de Variables Musicales por Década</h2>
+
+    <div class="radar-grid">
+        
+        <div class="radar-card">
+            <h3 class="radar-subtitle">Década de 1980</h3>
+            <div class="radar-iframe-wrapper">
+                <iframe src="radar_80s.html" title="Variables Musicales - 80s"></iframe>
+            </div>
+        </div>
+
+        <div class="radar-card">
+            <h3 class="radar-subtitle">Década de 1990</h3>
+            <div class="radar-iframe-wrapper">
+                <iframe src="radar_90s.html" title="Variables Musicales - 90s"></iframe>
+            </div>
+        </div>
+
+        <div class="radar-card">
+            <h3 class="radar-subtitle">Década de 2000</h3>
+            <div class="radar-iframe-wrapper">
+                <iframe src="radar_2000s.html" title="Variables Musicales - 2000s"></iframe>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<style>
+.radar-section-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 15px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.radar-section-title {
+    text-align: center;
+    color: #654537;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+/* Diseño de tabla/bloques para asegurar alineación exacta una al lado de la otra */
+.radar-grid {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 15px 0;
+}
+
+.radar-card {
+    display: table-cell;
+    background: #ffffff;
+    border: 1px solid #ead3bc;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    vertical-align: top;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-sizing: border-box;
+}
+
+.radar-subtitle {
+    color: #c05a48;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.radar-iframe-wrapper {
+    position: relative;
+    width: 100%;
+    /* Ajusta este porcentaje si deseas que los gráficos sean más altos o bajos */
+    padding-top: 100%; 
+    overflow: hidden;
+}
+
+.radar-iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;}
+
+</style>
+
+<div class="radar-analysis-block">
+        <h3 class="analysis-subtitle">¿Cómo cambia el sonido del rock chileno con el paso del tiempo?</h3>
+        <p class="analysis-text">
+            Los radares permiten comparar el perfil sonoro promedio de las canciones según su década de publicación. 
+            Aunque cada período presenta diferencias, la estructura general se mantiene sorprendentemente similar. 
+            La energía continúa siendo el atributo dominante en todas las décadas, mientras que la presencia de 
+            elementos acústicos, voces habladas y canciones instrumentales permanece baja. Esto sugiere que, pese 
+            a la evolución de estilos, bandas y contextos históricos, el rock chileno ha conservado una identidad 
+            sonora relativamente estable.
+        </p>
+    </div>
+</div>
+<style>
+.radar-section-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 15px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.radar-section-title {
+    text-align: center;
+    color: #654537;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+/* Diseño de tabla/bloques para asegurar alineación exacta una al lado de la otra */
+.radar-grid {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 15px 0;
+    margin-bottom: 35px; /* Espacio antes del texto explicativo */
+}
+
+.radar-card {
+    display: table-cell;
+    background: #ffffff;
+    border: 1px solid #ead3bc;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    vertical-align: top;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-sizing: border-box;
+}
+
+.radar-subtitle {
+    color: #c05a48;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.radar-iframe-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; 
+    overflow: hidden;
+}
+
+.radar-iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Estilos específicos para la sección del análisis de texto */
+.radar-analysis-block {
+    background-color: #fcfaf7; /* Fondo beige muy sutil para destacar el bloque de análisis */
+    border-left: 5px solid #c05a48; /* Línea lateral terracota */
+    padding: 20px;
+    border-radius: 4px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+.analysis-subtitle {
+    color: #c05a48;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.analysis-text {
+    color: #654537;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+    text-align: justify;
+}
+</style>
+
+            <div class="expert-section">
+                <h2>Rock con identidad nacional, Memoria Chilena.</h2>
+                <blockquote class="expert-quote">
+                    "Las letras fueron haciéndose cada vez más representativas de la realidad chilena. El idioma español desplazó definitivamente al inglés de los inicios, y la contingencia tuvo su expresión efectiva con grupos como Los Prisioneros, que cantaron sobre los jóvenes, los pobladores o el machismo.
+El rock ahora forma parte de la historia social y cultural chilena, y es manifestación vigente de su contemporaneidad".
+                </blockquote>
+            </div>
+
+            <div class="data-block">
+                <h3 class="grafico-titulo">Análisis de Variables Musicales</h3>
+                <p class="descripcion">
+                    Explora en detalle el comportamiento de variables como la energía, valencia acústica y tempo en la música chilena.
+                </p>
+                <div class="iframe-container">
+                    <iframe src="variables_musicales (1).html" class="grafico-frame" style="border:none;"> </iframe>
+                </div>
+                <div class="single-text-block">
+                    <p>La canción promedio del rock chileno es energética (0,70), moderadamente bailable (0,52), emocionalmente equilibrada (0,57), poco acústica (0,19) y casi nunca hablada (0,05). La variable más alta es <strong>Energy</strong>, lo que indica que predomina la fuerza rítmica, guitarras eléctricas y estructuras tradicionales.</p>
+                </div>
+            </div>
+
+            <div class="data-grid-two">
+                <div class="data-block">
+                    <h3 class="grafico-titulo">Los sellos que impulsaron una generación</h3>
+                    <div class="iframe-container small-iframe">
+                        <iframe src="top5_sellos_final_interactivo.html" class="grafico-frame" style="border:none;"></iframe>
+                    </div>
+                    <h4>Detrás de cada disco</h4>
+                    <p>Los sellos musicales fueron actores fundamentales en la difusión del rock chileno, permitiendo alcances masivos.</p>
+                </div>
+
+                <div class="data-block">
+                    <h3 class="grafico-titulo">Las voces que marcaron una generación</h3>
+                    <div class="iframe-container small-iframe">
+                        <iframe src="ranking_artistas.html" class="grafico-frame" style="border:none;"></iframe>
+                    </div>
+                    <h4>Una memoria con nombres propios</h4>
+                    <p>Algunos artistas lograron trascender el ámbito musical para transformarse en verdaderos referentes culturales.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="protagonistas" class="section dark">
+        <div class="container">
+            <h2 class="section-title">Los protagonistas</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="Pateando Piedras.jpg" alt="Los Prisioneros">
+                    </div>
+                    <div class="card-body">
+                        <h3>Los Prisioneros</h3>
+                        <p>Voz fundamental de una generación marcada por la crítica social, la crudeza rítmica y el cambio cultural de los años 80.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="Los Jaivas.jpg" alt="Los Jaivas">
+                    </div>
+                    <div class="card-body">
+                        <h3>Los Jaivas</h3>
+                        <p>Fusión maestra de folclor andino, raíces latinoamericanas y rock progresivo que trasciende generaciones.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="Los Tres (1).jpg" alt="Los Tres">
+                    </div>
+                    <div class="card-body">
+                        <h3>Los Tres</h3>
+                        <p>Eje del nuevo rock de los 90. Trajeron de vuelta la chilenidad unida al jazz guachaca, las guitarras eléctricas y el pop sofisticado.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="La Ley, 1990.jpg" alt="La Ley">
+                    </div>
+                    <div class="card-body">
+                        <h3>La Ley</h3>
+                        <p>Reflejo de la apertura internacional, caracterizados por un sonido synth-pop y rock alternativo de alta factura comercial.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section final">
+        <div class="container">
+            <h2>¿Existe una canción promedio chilena?</h2>
+            <p>
+                Los datos parecen indicar que sí.<br>
+                Pero detrás de cada número existe una historia, una generación y una memoria compartida.
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>
+```
