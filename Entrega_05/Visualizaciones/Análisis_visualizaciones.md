@@ -1,1 +1,1 @@
-Análisis del diseño de la información y diseño de la interacción:
+Análisis de las visualizaciones en relación con la historia que estamos contando:
