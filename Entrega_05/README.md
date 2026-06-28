@@ -19,5 +19,5 @@ De esta manera, el proyecto no solo logró respaldar su hipótesis inicial, sino
 
 | Integrante | Responsabilidades |
 |------------|-------------------|
-| **Asunción Luna** | Gráficos de radar, tabla de artistas más escuchados y de los atributos, documentación, redacción de la historia y recopilación de imágenes. |
 | **Geraldine González** | Recopilación de imágenes, diseño y armado de la página web, gráfico de barras y gráfico de las discográficas, redacción de la historia. |
+| **Asunción Luna** | Gráficos de radar, tabla de artistas más escuchados y de los atributos, documentación, redacción de la historia y recopilación de imágenes. |
