@@ -402,3 +402,47 @@ display(HTML(html_output))
 Este gráfico muestra los cinco principales sellos musicales presentes en la base de datos. Su objetivo es identificar cuáles han concentrado una mayor cantidad de canciones dentro del ranking y comprender qué sellos o categorías tuvieron una mayor participación en la difusión y consolidación del rock chileno. 
 
 **Código:**
+
+# Ficha técnica de la base de datos
+
+### Características de los datos
+
+- Base de datos en formato **CSV**.
+- Contiene información de **232 canciones** pertenecientes al listado de las mejores canciones del rock chileno.
+- Reúne información descriptiva de cada canción y atributos musicales obtenidos desde Spotify.
+
+### Variables incorporadas
+
+| Variable | Descripción |
+|----------|-------------|
+| Track URI | Identificador único de la canción en Spotify. |
+| Track Name | Nombre de la canción. |
+| Album Name | Nombre del álbum al que pertenece. |
+| Artist Name(s) | Artista o banda intérprete. |
+| Release Date | Fecha de lanzamiento de la canción. |
+| Duration (ms) | Duración de la canción en milisegundos. |
+| Popularity | Índice de popularidad otorgado por Spotify. |
+| Explicit | Indica si la canción posee contenido explícito. |
+| Added By | Usuario que agregó la canción a la base. |
+| Added At | Fecha en que la canción fue incorporada. |
+| Genres | Género(s) musical(es). |
+| Record Label | Sello discográfico o categoría asociada. |
+| Danceability | Qué tan bailable es la canción (0-1). |
+| Energy | Nivel de intensidad y actividad (0-1). |
+| Key | Tonalidad musical. |
+| Loudness | Volumen promedio de la canción en decibeles (dB). |
+| Mode | Modo musical (mayor o menor). |
+| Speechiness | Presencia de palabras habladas (0-1). |
+| Acousticness | Probabilidad de que la canción sea acústica (0-1). |
+| Instrumentalness | Probabilidad de que la canción no contenga voces (0-1). |
+| Liveness | Probabilidad de que la grabación sea en vivo (0-1). |
+| Valence | Positividad emocional de la canción (0-1). |
+| Tempo | Velocidad de la canción en BPM. |
+| Time Signature | Compás predominante de la canción. |
+
+### Observaciones
+
+- Para las visualizaciones se utilizaron únicamente las variables necesarias según cada análisis.
+- El análisis del perfil sonoro se realizó utilizando las variables **Danceability, Energy, Acousticness, Instrumentalness, Liveness, Speechiness y Valence**, ya que comparten una escala entre 0 y 1 y permiten comparar las canciones de forma consistente.
+- La variable **Release Date** fue procesada para obtener el año de publicación y realizar comparaciones entre décadas.
+```
