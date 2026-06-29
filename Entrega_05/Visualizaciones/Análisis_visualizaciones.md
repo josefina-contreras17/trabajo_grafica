@@ -254,3 +254,141 @@ details p{
 </div>
 """)
 ```
+
+## Tabla de artistas más presentes
+
+![Tabla de artistas más presentes](imagenes/artistastop.png)
+
+Esta visualización muestra los cinco artistas con mayor cantidad de canciones dentro de la base de datos. Su objetivo es identificar qué bandas han tenido una mayor presencia en la selección y evidenciar cuáles han contribuido con más obras a la construcción del canon del rock chileno.
+
+**Código** 
+```
+import pandas as pd
+from IPython.display import HTML, display
+
+# Ranking de artistas chilenos con más canciones
+datos = {
+    "Artista": [
+        "Los Jaivas",
+        "Los Prisioneros",
+        "Los Tres",
+        "Los Bunkers",
+        "Congreso"
+    ],
+    "Canciones en el ranking": [6, 6, 6, 4, 4],
+    "Canciones": [
+        [
+            "Todos Juntos - 2020 Remasterizado",
+            "La Poderosa Muerte",
+            "Mira Niñita - 2020 Remasterizado",
+            "La Conquistada",
+            "Hijos de la Tierra",
+            "Sube a Nacer Conmigo Hermano"
+        ],
+        [
+            "El Baile De Los Que Sobran",
+            "La Voz de los '80",
+            "Muevan Las Industrias",
+            "Tren Al Sur",
+            "Estrechez De Corazón",
+            "We Are Sudamerican Rockers"
+        ],
+        [
+            "Déjate Caer",
+            "Un Amor Violento",
+            "He Barrido el Sol",
+            "Bolsa de Mareo",
+            "Pájaros de fuego",
+            "No Sabes Que Desperdicio Tengo en el Alma"
+        ],
+        [
+            "Miño",
+            "Bailando Solo",
+            "Canción para mañana",
+            "Llueve Sobre La Ciudad"
+        ],
+        [
+            "En Todas las Esquinas",
+            "Hijo Del Sol Luminoso",
+            "El Cielito De Mi Pieza",
+            "Premio de Consuelo"
+        ]
+    ]
+}
+
+df = pd.DataFrame(datos)
+
+# Start building the HTML string, including the style block
+html_output = """
+<style>
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+th {
+    background-color: #c05a48;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+td {
+    border: 1px solid #c05a48;
+    padding: 10px;
+}
+tr:nth-child(even) {
+    background-color: #ead5be;
+}
+tr:nth-child(odd) {
+    background-color: #f8f3ee;
+}
+details summary {
+    cursor: pointer;
+    color: #c05a48;
+    font-weight: bold;
+}
+details summary:hover {
+    color: #9f4738;
+}
+h2 {
+    color: #c05a48;
+}
+</style>
+
+<h2>Ranking de los 5 artistas chilenos con más canciones en el ranking</h2>
+
+<table>
+<tr>
+    <th>Posición</th>
+    <th>Artista</th>
+    <th>Canciones en el ranking</th>
+</tr>
+"""
+
+# Loop through the DataFrame to generate table rows and append to the html_output string
+for i, row in df.iterrows():
+    canciones = "".join(
+        [f"<li>{c}</li>" for c in row["Canciones"]]
+    )
+
+    html_output += f"""
+    <tr>
+        <td align='center'>{i+1}</td>
+        <td>
+            <details>
+                <summary><b>{row['Artista']}</b></summary>
+                <ul>
+                    {canciones}
+                </ul>
+            </details>
+        </td>
+        <td align='center'>{row['Canciones en el ranking']}</td>
+    </tr>
+    """
+
+html_output += "</table>"
+
+display(HTML(html_output))
+```
+
