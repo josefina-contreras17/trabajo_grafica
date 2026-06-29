@@ -9,7 +9,7 @@
 ![Radar general](imagenes/radargeneral.png)
 
 **Codigo:** 
-import pandas as pd
+```import pandas as pd
 import plotly.express as px
 
 # Cargar la base de datos
@@ -73,3 +73,4 @@ fig.update_layout(
 )
 
 fig.show()
+```
