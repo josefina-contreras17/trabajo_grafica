@@ -5,6 +5,10 @@ Todas las visualizaciones fueron hechas en base a la base de datos única del tr
 
 ![Gráfico de barras](imagenes/graficobarras.png)
 
+Esta visualización muestra la cantidad de canciones del ranking según su año de publicación. Su objetivo es identificar los períodos de mayor producción e impacto del rock chileno, evidenciando el fuerte crecimiento durante la década de 1990, especialmente alrededor de 1997, y la disminución de su presencia en años más recientes. Esto permite relacionar la evolución del género con su contexto histórico y cultural.
+
+**Código:**
+
 ## Radar general
 
 ![Radar general](imagenes/radargeneral.png)
@@ -391,4 +395,10 @@ html_output += "</table>"
 
 display(HTML(html_output))
 ```
+## Gráfico de discográficas
 
+![Gráfico de discográficas](imagenes/discograficas.png)
+
+Este gráfico muestra los cinco principales sellos musicales presentes en la base de datos. Su objetivo es identificar cuáles han concentrado una mayor cantidad de canciones dentro del ranking y comprender qué sellos o categorías tuvieron una mayor participación en la difusión y consolidación del rock chileno. 
+
+**Código:**
