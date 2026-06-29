@@ -9,6 +9,8 @@ Todas las visualizaciones fueron hechas en base a la base de datos única del tr
 
 ![Radar general](imagenes/radargeneral.png)
 
+Esta visualización muestra el **promedio de los atributos musicales** de las mejores canciones del rock chileno. A partir de estos promedios se construye el perfil sonoro promedio del género, evidenciando que las canciones comparten características similares, como altos niveles de Energy y bajos niveles de Speechiness y Acousticness, lo que respalda la hipótesis de una identidad sonora común.
+
 **Codigo:** 
 ```import pandas as pd
 import plotly.express as px
