@@ -158,3 +158,99 @@ fig.update_layout(
 
 fig.show()
 ```
+## Tabla de atributos musicales
+
+![Tabla de atributos musicales](imagenes/atributos.png)
+
+Esta visualización presenta las 12 variables musicales utilizadas en el análisis de las canciones del rock chileno. Su objetivo es explicar de manera clara qué mide cada atributo obtenido desde Spotify y cómo estos permiten describir técnicamente el sonido de una canción. De esta forma, el lector comprende las dimensiones utilizadas en las visualizaciones posteriores y el fundamento del análisis realizado.
+
+**Código**
+```
+from IPython.display import HTML
+
+HTML("""
+<style>
+.variables{
+    max-width:700px;
+    margin:auto;
+    font-family: Arial, sans-serif;
+}
+
+details{
+    background:#ead3bc;
+    border-left:6px solid #e37a35;
+    margin:10px 0;
+    padding:12px;
+    border-radius:8px;
+}
+
+summary{
+    font-weight:bold;
+    color:#654537;
+    cursor:pointer;
+    font-size:18px;
+}
+
+details p{
+    color:#654537;
+    margin-top:10px;
+    line-height:1.6;
+}
+</style>
+
+<div class="variables">
+
+<h2 style="color:#654537;">Explora las variables musicales</h2>
+
+<details>
+  <summary>⚡ Energy</summary>
+  <p>
+    Mide la intensidad y actividad de una canción. Valores altos suelen asociarse a canciones rápidas, fuertes y dinámicas.
+  </p>
+</details>
+
+<details>
+  <summary>💃 Danceability</summary>
+  <p>
+    Indica qué tan adecuada es una canción para bailar considerando ritmo, estabilidad y regularidad.
+  </p>
+</details>
+
+<details>
+  <summary>🎸 Acousticness</summary>
+  <p>
+    Estima la probabilidad de que una canción sea acústica. Valores altos indican mayor presencia de instrumentos acústicos.
+  </p>
+</details>
+
+<details>
+  <summary>😊 Valence</summary>
+  <p>
+    Mide la positividad emocional de una canción. Valores altos suelen asociarse a canciones alegres y optimistas.
+  </p>
+</details>
+
+<details>
+  <summary>🎤 Speechiness</summary>
+  <p>
+    Detecta la presencia de palabras habladas dentro de una canción.
+  </p>
+</details>
+
+<details>
+  <summary>🎶 Instrumentalness</summary>
+  <p>
+    Predice la probabilidad de que una canción no contenga voces.
+  </p>
+</details>
+
+<details>
+  <summary>🎸 Liveness</summary>
+  <p>
+    Detecta la presencia de público o grabaciones en vivo.
+  </p>
+</details>
+
+</div>
+""")
+```
