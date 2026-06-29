@@ -84,8 +84,8 @@ fig.show()
 
 Esta visualización compara el **promedio de los atributos musicales** de las canciones publicadas en las décadas de 1980 (16 canciones), 1990 (61 canciones) y 2000 (49 canciones). El objetivo es observar cómo evoluciona el perfil sonoro del rock chileno a lo largo del tiempo. Aunque existen pequeñas variaciones entre décadas, los radares muestran una estructura muy similar, lo que refuerza la existencia de una identidad sonora compartida que se mantiene relativamente estable pese a los cambios generacionales y al contexto histórico.
 
-**Código** 
-``
+**Código** (es el mismo usado para las tres decadas, solo cambiando los años)
+```
 import pandas as pd
 import plotly.express as px
 
@@ -157,4 +157,4 @@ fig.update_layout(
 )
 
 fig.show()
-``
+```
