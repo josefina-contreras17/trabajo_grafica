@@ -1,5 +1,6 @@
 # Análisis de las visualizaciones 
 
+Todas las visualizaciones fueron hechas en base a la base de datos única del trabajo : [Base de datos final (Excel)](Basededatosfinal.xlsx)
 ## Gráfico de barras 
 
 ![Gráfico de barras](imagenes/graficobarras.png)
