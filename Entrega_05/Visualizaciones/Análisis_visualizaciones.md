@@ -11,7 +11,7 @@ Todas las visualizaciones fueron hechas en base a la base de datos única del tr
 
 Esta visualización muestra el **promedio de los atributos musicales** de las mejores canciones del rock chileno. A partir de estos promedios se construye el perfil sonoro promedio del género, evidenciando que las canciones comparten características similares, como altos niveles de Energy y bajos niveles de Speechiness y Acousticness, lo que respalda la hipótesis de una identidad sonora común.
 
-**Codigo:** 
+**Código:** 
 ```import pandas as pd
 import plotly.express as px
 
@@ -83,3 +83,78 @@ fig.show()
 ![Radar por décadas](imagenes/radardecadas.png)
 
 Esta visualización compara el **promedio de los atributos musicales** de las canciones publicadas en las décadas de 1980 (16 canciones), 1990 (61 canciones) y 2000 (49 canciones). El objetivo es observar cómo evoluciona el perfil sonoro del rock chileno a lo largo del tiempo. Aunque existen pequeñas variaciones entre décadas, los radares muestran una estructura muy similar, lo que refuerza la existencia de una identidad sonora compartida que se mantiene relativamente estable pese a los cambios generacionales y al contexto histórico.
+
+**Código** 
+``
+import pandas as pd
+import plotly.express as px
+
+# Cargar la base de datos
+df = pd.read_csv("mejorescancionesrocklatino_original.csv")
+
+# Convertir fecha
+df["Release Date"] = pd.to_datetime(df["Release Date"], format="mixed")
+
+# Crear columna año
+df["Year"] = df["Release Date"].dt.year
+
+# Filtrar solo canciones de los 2000
+df2000 = df[(df["Year"] >= 2000) & (df["Year"] <= 2009)]
+
+# Variables para el radar
+variables = [
+    "Danceability",
+    "Energy",
+    "Acousticness",
+    "Instrumentalness",
+    "Liveness",
+    "Speechiness",
+    "Valence"
+]
+
+# Calcular promedios
+promedios2000 = df2000[variables].mean()
+
+# Mostrar los promedios
+print(promedios2000)
+
+# Crear radar
+fig = px.line_polar(
+    r=promedios2000.values,
+    theta=promedios2000.index,
+    line_close=True
+)
+
+fig.update_traces(
+    fill='toself',
+    line=dict(
+        color='#654537',
+        width=4
+    ),
+    fillcolor='rgba(227,122,53,0.45)'
+)
+
+fig.update_layout(
+    showlegend=False,
+    paper_bgcolor='#ead3bc',
+    plot_bgcolor='#ead3bc',
+    font=dict(
+        family="Arial",
+        size=14,
+        color='#654537'
+    ),
+    polar=dict(
+        bgcolor='#ead3bc',
+        radialaxis=dict(
+            visible=True,
+            range=[0,1],
+            gridcolor='#c15a49'
+        ),
+        angularaxis=dict(
+            gridcolor='#c15a49'
+        )
+    )
+)
+
+fig.show()
+``
