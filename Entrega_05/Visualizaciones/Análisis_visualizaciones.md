@@ -8,6 +8,58 @@ Todas las visualizaciones fueron hechas en base a la base de datos única del tr
 Esta visualización muestra la cantidad de canciones del ranking según su año de publicación. Su objetivo es identificar los períodos de mayor producción e impacto del rock chileno, evidenciando el fuerte crecimiento durante la década de 1990, especialmente alrededor de 1997, y la disminución de su presencia en años más recientes. Esto permite relacionar la evolución del género con su contexto histórico y cultural.
 
 **Código:**
+```
+import pandas as pd
+import plotly.express as px
+
+# 1. Cargar la base de datos
+df = pd.read_csv('rocklatino_database_ocupada.csv.csv', sep=';')
+
+# 2. Limpiar y procesar la columna de años
+# Convertimos a numérico forzando errores a NaN (por si hay textos o celdas vacías)
+df['Year'] = pd.to_numeric(df['Year'], errors='coerce')
+
+# Eliminar los registros que no tengan un año válido
+df_filtered = df.dropna(subset=['Year'])
+
+# Convertir el año a entero para evitar decimales (.0) en el gráfico
+df_filtered['Year'] = df_filtered['Year'].astype(int)
+
+# 3. Agrupar por año y contar la cantidad de canciones
+anos_df = df_filtered['Year'].value_counts().reset_index()
+anos_df.columns = ['Año', 'Cantidad de Canciones']
+
+# Ordenar cronológicamente (de menor a mayor año)
+anos_df = anos_df.sort_values(by='Año')
+
+# 4. Crear el gráfico de barras interactivo con Plotly
+fig = px.bar(
+    anos_df,
+    x='Año',
+    y='Cantidad de Canciones',
+    title='Distribución de Canciones por Año de Lanzamiento',
+    labels={'Cantidad de Canciones': 'N° de Canciones', 'Año': 'Año'},
+    color='Cantidad de Canciones',
+    color_continuous_scale='Viridis'  # Puedes cambiar la paleta (Blues, Plasma, etc.)
+)
+
+# 5. Personalizar el diseño para una línea de tiempo limpia
+fig.update_layout(
+    template='plotly_white',
+    title_x=0.5,  # Centrar el título
+    xaxis=dict(
+        type='category',  # Trata los años como categorías para que no oculte etiquetas
+        tickangle=-45     # Rotar los años para que se lean perfectamente
+    ),
+    showlegend=False
+)
+
+# 6. Guardar como el archivo HTML interactivo que subiste
+fig.write_html('grafico_interactivo_anos.html')
+
+# Mostrar el gráfico en tu entorno (Jupyter, VS Code, etc.)
+fig.show()
+```
 
 ## Radar general
 
@@ -402,6 +454,50 @@ display(HTML(html_output))
 Este gráfico muestra los cinco principales sellos musicales presentes en la base de datos. Su objetivo es identificar cuáles han concentrado una mayor cantidad de canciones dentro del ranking y comprender qué sellos o categorías tuvieron una mayor participación en la difusión y consolidación del rock chileno. 
 
 **Código:**
+```
+import pandas as pd
+import plotly.express as px
+
+# 1. Cargar la base de datos (especificando el separador de punto y coma)
+df = pd.read_csv('rocklatino_database_ocupada.csv.csv', sep=';')
+
+# 2. Limpiar y procesar los datos de la columna 'Record Label'
+# Limpiamos comillas adicionales que puedan venir en el texto
+df['Record Label'] = df['Record Label'].astype(str).str.replace('"', '').str.strip()
+
+# Filtrar valores vacíos, nulos o genéricos como 'false' o 'nan'
+df_filtered = df[~df['Record Label'].isin(['nan', 'false', '', 'None'])]
+
+# 3. Obtener el Top 5 de sellos discográficos con más registros
+top_sellos = df_filtered['Record Label'].value_counts().reset_index()
+top_sellos.columns = ['Sello Discográfico', 'Cantidad de Canciones']
+top_sellos = top_sellos.head(5)
+
+# 4. Crear el gráfico de barras interactivo con Plotly
+fig = px.bar(
+    top_sellos,
+    x='Sello Discográfico',
+    y='Cantidad de Canciones',
+    title='Top 5 Sellos Discográficos con Más Canciones',
+    labels={'Cantidad de Canciones': 'N° de Canciones', 'Sello Discográfico': 'Sello'},
+    color='Cantidad de Canciones',
+    color_continuous_scale='Blues'  # Escala de colores azulada similar a la plantilla por defecto
+)
+
+# 5. Personalizar el diseño para que se vea limpio y profesional
+fig.update_layout(
+    template='plotly_white',
+    title_x=0.5,  # Centrar el título
+    xaxis_tickangle=-45,  # Rotar las etiquetas si son muy largas
+    showlegend=False
+)
+
+# 6. Guardar como archivo HTML interactivo (como el que subiste)
+fig.write_html('top5_sellos_final_interactivo.html')
+
+# Mostrar el gráfico en el entorno de desarrollo (Jupyter, VS Code, etc.)
+fig.show()
+```
 
 # Ficha técnica de la base de datos
 
